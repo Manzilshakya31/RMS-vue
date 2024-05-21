@@ -19,10 +19,9 @@ const Menu = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       <div className="xl:flex lg:gap-5 gap-3 mb-[32px] items-center justify-center">
-        <Menubox />
-        <Menubox data={menuitem} />
-        <Menubox />
-        <Menubox />
+        {[...Array(4)].map((_x, i) => (
+          <Menubox key={i} />
+        ))}
       </div>
       <Stack spacing={2} className="flex items-center">
         <Pagination count={10} />
