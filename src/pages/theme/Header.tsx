@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "/vite.svg";
 import { PicLeftOutlined } from "@ant-design/icons";
+import { showSuccessMessage } from "../../utils/notification";
 
 // import { useState } from "react";
 // import {
@@ -57,6 +58,12 @@ const Header = () => {
   // const toggleCollapsed = () => {
   //   setCollapsed(!collapsed);
   // };
+  const navigate = useNavigate();
+  const logout = () => {
+    showSuccessMessage("Logout successful");
+    localStorage.removeItem("isLogin");
+    navigate("/login");
+  };
   return (
     // <div className="flex header h-[96px]">
     <div className="flex header h-[86px]">
@@ -99,10 +106,12 @@ const Header = () => {
           inlineCollapsed={collapsed}
           items={items}
         /> */}
-        <Link to={"Login"} className="btn btn-danger">
+        {/* <Link to={"Login"} className="btn btn-danger"> */}
+        <button type="button" onClick={logout}>
           <PicLeftOutlined />
-          {/* Logout */}
-        </Link>
+        </button>
+        {/* Logout */}
+        {/* </Link> */}
       </div>
     </div>
   );

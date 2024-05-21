@@ -16,11 +16,16 @@
     "@mui/material": "^5.15.17",
     "antd": "^5.17.0",
     "react": "^18.2.0",
+    "react-axiom": "^0.5.2",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.0",
+    "react-scripts": "^5.0.1",
     "react-social-icons": "^6.16.0",
-    "styled-components": "^6.1.11"
+    "react-toastify": "^10.0.5",
+    "styled-components": "^6.1.11",
+    "uuid": "^9.0.1",
+    "web-vitals": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
