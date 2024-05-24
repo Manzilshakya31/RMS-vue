@@ -39,7 +39,7 @@ const Login = () => {
       showSuccessMessage("Login successful");
 
       localStorage.setItem("isLogin", "1");
-      navigate("/landing");
+      navigate("/landingpage");
     } else {
       // alert("Login failed");
       setErrorMessage("Invalid email or password!!");
@@ -73,7 +73,7 @@ const Login = () => {
               name="email"
               handleInputChange={handleInputChange}
               value={email}
-              className="border-1 border-black rounded-lg w-[400px] h-[44px] text-center mt-[6px]"
+              className="border-2 border-solid border-black rounded-lg w-[400px] h-[44px] p-2 mt-[6px]"
             />
           </div>
         </div>
@@ -83,7 +83,7 @@ const Login = () => {
             name="password"
             handleInputChange={handleInputChange}
             value={password}
-            className="border-1 border-black rounded-lg w-[400px] h-[44px] text-center mt-[6px]"
+            className="border-2 border-solid border-black rounded-lg w-[400px] h-[44px] p-2 mt-[6px]"
           />
           {/* <p>Password</p>
           <div className="">

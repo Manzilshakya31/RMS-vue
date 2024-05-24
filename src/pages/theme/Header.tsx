@@ -62,7 +62,7 @@ const Header = () => {
   const logout = () => {
     showSuccessMessage("Logout successful");
     localStorage.removeItem("isLogin");
-    navigate("/login");
+    navigate("/landing");
   };
   return (
     // <div className="flex header h-[96px]">
@@ -75,17 +75,20 @@ const Header = () => {
         {/* <ul className="text-black flex lg:gap-[80px] gap-[50px] text-[24px] mt-[35px] xl:ml-[540px] lg:ml-[150px] header-nav "> */}
         <ul className="text-black flex lg:gap-[80px] gap-[50px] text-[24px] mt-[25px] xl:ml-[540px] lg:ml-[150px] header-nav ">
           <li>
-            <Link to={"/landing"}>Home</Link>
+            <Link to={"/landingpage"}>Home</Link>
           </li>
           <li>
-            <Link to={"/"}>About Us</Link>
+            <Link to={"/restaurant"}>Booking</Link>
           </li>
           <li>
-            <Link to={"/"}>Media</Link>
+            <Link to={"/"}>Offers</Link>
           </li>
           <li>
+            <Link to={"/"}>Profile</Link>
+          </li>
+          {/* <li>
             <Link to={"/"}>Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       {/* <div className="mt-[40px] right-10 absolute"> */}
