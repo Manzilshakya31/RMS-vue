@@ -40,3 +40,5 @@ react icon for icon
 tailwind css
 antd
 antd socialmedia
+
+color: #6140ef, #b7a8f7

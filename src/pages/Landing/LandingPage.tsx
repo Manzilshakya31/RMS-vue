@@ -1,8 +1,8 @@
 import Already from "../../components/Landing/Already";
-import BestItem from "./BestItem";
-import HeroSection from "./HeroSection";
-import Info from "./Info";
-import Menu from "./Menu";
+import BestItem from "../../components/Landing/BestItem";
+import HeroSection from "../../components/Landing/HeroSection";
+import Info from "../../components/Landing/Info";
+import Menu from "../../components/Landing/Menu";
 
 const LandingPage = () => {
   return (

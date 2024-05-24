@@ -19,9 +19,9 @@ const Already = () => {
             <button
               //   type="primary"
               //   onClick={() => show()}
-              className="btn-classic hover:bg-white md:py-4 py-3 px-8  w-full rounded-lg flex items-center gap-2 text-lg max-md:w-full max-md:justify-center"
+              className=" hover:bg-white bg-[#6140ef] text-white hover:text-[black] md:py-4 py-3 px-8  w-full rounded-lg flex items-center gap-2 text-lg max-md:w-full max-md:justify-center"
             >
-              Port Your Number
+              Get started
               {/* <Icon name="arrow-right" className="h-5 w-5" /> */}
               <FaArrowRight />
             </button>
