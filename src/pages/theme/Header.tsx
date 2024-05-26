@@ -81,7 +81,7 @@ const Header = () => {
             <Link to={"/restaurant"}>Booking</Link>
           </li>
           <li>
-            <Link to={"/"}>Offers</Link>
+            <Link to={"/map"}>Map</Link>
           </li>
           <li>
             <Link to={"/"}>Profile</Link>

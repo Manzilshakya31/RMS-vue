@@ -55,7 +55,8 @@ const Login = () => {
   return (
     <div className="flex h-screen">
       <div className="flex flex-col justify-center ml-[260px]">
-        <h1 className="text-[56px] text-[#C79C60] italic font-bold">Login</h1>
+        {/* <h1 className="text-[56px] text-[#C79C60] italic font-bold">Login</h1> */}
+        <h1 className="text-[56px] text-[#6140ef] italic font-bold">Login</h1>
         <p className="text-[18px] mt-[12px] font-medium">
           Welcome back! Please enter your details.
         </p>
@@ -100,7 +101,7 @@ const Login = () => {
         </Link>
 
         <button
-          className="btn-1 mt-[24px] border-2 border-black rounded-lg w-[400px] h-[44px]"
+          className="btn-1 bg-[#6140ef] mt-[24px] hover:shadow-xl rounded-lg w-[400px] h-[44px]"
           onClick={doLogin}
         >
           Login
@@ -112,9 +113,10 @@ const Login = () => {
       </div>
       <div className="">
         <img
-          src="/images/L1.png"
+          src="/images/l3.jpeg"
           alt=""
           className="restaurant absolute right-0"
+          width={600}
         />
         {/* <img src={restro} alt=""  height={832} width={555}/> */}
       </div>

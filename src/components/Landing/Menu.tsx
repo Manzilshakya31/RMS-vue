@@ -13,8 +13,8 @@ const Menu = () => {
   console.log(menuitem, "qwertyui");
   return (
     // <ContentWrapper className="mt-[24px]">
-    <div className=" mx-[170px] py-[32px]">
-      <h1 className="text-[32px]">Most Popular Dishes</h1>
+    <div className=" mx-[170px] pt-[128px] mb-[48px]">
+      <h1 className="text-[42px] font-medium ">Most Popular Dishes</h1>
       <p className="text-grey">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
