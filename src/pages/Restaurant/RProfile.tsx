@@ -1,15 +1,16 @@
 import { Button } from "antd";
 // import designbg from "/images/design-bg.png";
-import banner1 from "/images/banner1.png";
+import b2 from "/images/b2.png";
 import restaurant1 from "/images/restaurant1.jpg";
 import Menu from "../Menu/Menu";
 import Rtable from "../../components/Restaurant/Rtable";
+import { tabledata } from "../../components/constant";
 
 const RProfile = () => {
   return (
     <div>
       <div>
-        <img src={banner1} alt="cover" className="w-full h-[260px]" />
+        <img src={b2} alt="cover" className="w-full h-[260px]" />
       </div>
       <div className="ml-[90px]">
         <div>
@@ -34,9 +35,10 @@ const RProfile = () => {
         </div>
       </div>
       <div className="">
-        {[...Array(8)].map((_x, i) => (
-          <Rtable key={i} />
-        ))}
+        {/* {[...Array(8)].map((_x, i) => (
+          <Rtable key={i} datatable={tabledata} />
+        ))} */}
+        <Rtable datatable={tabledata} />
       </div>
       {/* <Rtable /> */}
       <Menu />

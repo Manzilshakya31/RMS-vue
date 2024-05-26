@@ -5,7 +5,7 @@ import { FaApple } from "react-icons/fa";
 
 const Info = () => {
   return (
-    <div className="px-[150px] flex gap-2 bg-[#6140ef] ">
+    <div className="px-[150px] flex gap-2 bg-[#5962F6] ">
       {/* #acf49c, 83b44b */}
       <div>
         <img src={girlnlaptop} alt="" width={3000} />
