@@ -1,5 +1,8 @@
 {
   "name": "rms-vue",
+  "author": {
+    "name": "Manjil Shakya"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",

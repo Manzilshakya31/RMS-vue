@@ -5,8 +5,11 @@ import restaurant1 from "/images/restaurant1.jpg";
 import Menu from "../Menu/Menu";
 import Rtable from "../../components/Restaurant/Rtable";
 import { tabledata } from "../../components/constant";
+import { useLocation } from "react-router-dom";
 
 const RProfile = () => {
+  const location = useLocation();
+  console.log(location, "location");
   return (
     <div>
       <div>
@@ -21,11 +24,11 @@ const RProfile = () => {
           />
         </div>
         <div className="mx-[50px] my-[24px]">
-          <h2 className="text-[32px] font-medium">NPP</h2>
+          <h2 className="text-[32px] font-medium">{location?.state?.name}</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor
-            obcaecati hic facere. Quis, distinctio? Hic sunt dolorum cumque
-            delectus vitae numquam voluptate
+            {location?.state?.desc
+              ? location?.state?.desc
+              : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor obcaecati hic facere. Quis, distinctio? Hic sunt dolorum cumque delectus vitae numquam voluptate"}
           </p>
         </div>
         <hr />

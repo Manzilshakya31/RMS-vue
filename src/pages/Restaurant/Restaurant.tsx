@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Restaurantbar from "../../components/Restaurant/Restaurantbar";
 import ViTextInput from "../../components/ViTextinput";
 import { Restaurantdata } from "../../components/constant";
@@ -31,10 +31,8 @@ const Restaurant = () => {
           </Link>
         ))} */}
         {/* <Link to={`../profile/${restaurantid}`}> */}
-        <Link to={"/profile"}>.</Link>
-        <Link to={"/profile"}>
-          <Restaurantbar rdata={Restaurantdata} />
-        </Link>
+        {/* <Link to={"/profile"}>.</Link> */}
+        <Restaurantbar rdata={Restaurantdata} />
       </div>
       {/* section */}
     </div>
