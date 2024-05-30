@@ -36,6 +36,10 @@ function App() {
               path="/profile"
               element={<PrivateRoute component={RProfile} />}
             />
+            <Route
+              path="/yourprofile"
+              element={<PrivateRoute component={RProfile} />}
+            />
             <Route path="/map" element={<PrivateRoute component={Map} />} />
           </Route>
           <Route path="/login" element={<Login />} />

@@ -11,8 +11,12 @@ const Restaurantbar = ({ rdata }: any) => {
   return (
     <div className="w-full">
       {rdata?.map((item: any, id: string) => {
+        // console.log(item?.id, "id");
         return (
-          <Link to={item?.id}>
+          <Link
+            to={`/profile`}
+            state={{ id: item?.id, name: item?.title, desc: item?.description }}
+          >
             <div className="shadow-lg hover:shadow-xl " key={id}>
               <div className="flex lg:w-[1150px] bg-white mt-[24px] p-3 items-center justify-center gap-[100px] rounded-lg hover:bg-slate-200">
                 <div>
